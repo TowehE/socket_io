@@ -27,8 +27,8 @@ do {
     alert("Please enter your name!");
   }
 } while (userName.length < 1 || userName == null);
-document.querySelector("h1").innerHTML=`Hello ${userName} welcome to my chat application`
-const socket=io("http://localhost:4529")
+document.querySelector("h1").innerHTML=`Hello ${userName} welcome to my chat application` 
+const socket=io("https://chatapp-q699.onrender.com/")
 
 // Display message history
 socket.on('message history', function (history) {
